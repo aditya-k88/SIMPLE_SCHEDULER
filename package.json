@@ -1,0 +1,22 @@
+{
+    "name": "simplescheduler",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.0.0"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/icons-material": "^7.0.2",
+        "@mui/material": "^7.0.2",
+        "@mui/x-date-pickers": "^8.0.0",
+        "date-fns-tz": "^3.2.0"
+    }
+}
